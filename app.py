@@ -1,8 +1,9 @@
 import streamlit as st
 import numpy as np
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model  # Keep this import
 from PIL import Image
 import cv2
+
 
 # Load your trained model
 model = load_model('skin_cancer_model.h5')  # Replace with your model path
