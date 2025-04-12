@@ -56,7 +56,7 @@ if uploaded_file is not None:
 
         # Preprocess image
         img = np.array(image)
-        img = cv2.resize(img, (300, 300))  # Updated to 300x300
+        img = cv2.resize(img, (224, 224))  # Updated to 300x300
         img = img / 255.0  # Normalization
         img = np.expand_dims(img, axis=0)  # Add batch dimension
 
